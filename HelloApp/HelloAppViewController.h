@@ -10,4 +10,7 @@
 
 @interface HelloAppViewController : UIViewController
 
+- (IBAction)helloButtonPress:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UILabel *helloLabel;
+@property (weak, nonatomic) IBOutlet UITextField *helloTextField;
 @end

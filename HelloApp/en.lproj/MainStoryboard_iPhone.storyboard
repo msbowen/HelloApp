@@ -26,6 +26,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="helloButtonPress:" destination="2" eventType="touchUpInside" id="EqJ-eq-Azp"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="mU7-jQ-XT8">
                                 <rect key="frame" x="139" y="52" width="42" height="21"/>
@@ -43,6 +46,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="helloLabel" destination="mU7-jQ-XT8" id="0Fg-t0-UCG"/>
+                        <outlet property="helloTextField" destination="b06-Qo-YNu" id="o79-IT-ilQ"/>
+                    </connections>
                 </viewController>
             </objects>
         </scene>
@@ -50,6 +57,11 @@
     <classes>
         <class className="HelloAppViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HelloAppViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="helloButtonPress:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="helloLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="helloTextField" candidateClass="UITextField"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
