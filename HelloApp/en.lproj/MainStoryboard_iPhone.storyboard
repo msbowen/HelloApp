@@ -52,6 +52,7 @@
                     </connections>
                 </viewController>
             </objects>
+            <point key="canvasLocation" x="-75" y="64"/>
         </scene>
     </scenes>
     <classes>
